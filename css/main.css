@@ -96,51 +96,130 @@ textarea {
    ========================================================================== */
 
 
+
+
 html {
-  background-color: #fff;
-  height: 100%;
+    background-color: #FEE8E0;
+    height: 100%;
+    width: 100%;
 }
 
 body {
     font-family: 'Dongle', sans-serif;
-    padding: 2em;
+    color: #4F0E00;
+    padding: 0;
+    margin: 0;
+    /** Needed to add padding:0 and margin:0 in body selector to make a box stretch across the whole screen without leaving a margin. **/
     font-size: 1.25em;
     height: 100%;
-    background: #C2E0F2;
+    width: 100%;
+    background-color: #FEE8E0;
+}
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+    padding-left: 50px;
+    padding-right: 100px;
+    font-family: 'Pacifico', cursive;
+}
+
+header,
+footer {
+    align-content: center;
+
+    background-color: #FEE8E0;
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    font-weight: lighter;
+}
+    
+main {
+    align-items: center;
+    background-color: #FFB3BA;
+    /** Note: If you want h3 and p text to wrap onto next line, add flex-flow:wrap to this main block so both elements do not fit on the row AND add width:1500px to header,footer block to est width of whole page. **/
+    margin: auto;
+    margin-bottom: 2rem;
+    height: auto;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+main p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    align-content: center;
+
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+p span {
+    font-family: 'Pacifico', cursive;
+    color: #FFB3BA;
+}
+
+.div-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+    font-weight: 700;
+    width: 1500px;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #40010D;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  padding-left: 1.6rem;
-  margin: 1rem;
-  height: 300px;
-  width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #4F0E00;
+    line-height: 1.5em;
+    font-size: 1.35em;
+    padding: 0 2rem 0 2rem;
+    height: auto;
+    width: 27%;
 }
 
 .div-1 {
-    padding: none;
     margin-left: 0%;
 }
 
 .div-2 {
-    border-left: .3rem dotted #77BDD9;
+    border-left: .3rem dotted white;
 }
 
 .div-3 {
-    border-left: .3rem dotted #77BDD9;
+    border-left: .3rem dotted white;
+}
+
+footer {
+    background-color: #FEE8E0;
+    align-content: center;
+}
+
+a {
+    color: #DC4C1A;
 }
 
 /* ==========================================================================
